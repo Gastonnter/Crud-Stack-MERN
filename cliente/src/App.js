@@ -1,8 +1,8 @@
 
 import './App.css';
 import ListaUsuarios from './component/ListaUsuarios';
-import AgregarUsurio from './component/AgregarUsurio'
-import EditarUsurio from './component/EditarUsuario'
+import AgregarUsuario from './component/AgregarUsuario'
+import EditarUsuario from './component/EditarUsuario'
 
 import { BrowserRouter, Routes , Route} from 'react-router-dom'
 
@@ -11,7 +11,7 @@ function App() {
     <div className="App">
   <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container">
-    <a className="navbar-brand" href="#">Crud Mern Stack render</a>
+    <a className="navbar-brand" href="/">Crud Mern Stack render</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -21,7 +21,7 @@ function App() {
           <a className="nav-link active" aria-current="page" href="/">Inicio</a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/agregarusuario">Agregar sUsurio</a>
+          <a className="nav-link" href="/agregarusuario">Agregar Usuario</a>
         </li>
       </ul>
     </div>
@@ -31,8 +31,8 @@ function App() {
       <BrowserRouter>
       <Routes>
       <Route path='/' element={<ListaUsuarios/>}exact> </Route>
-      <Route path='/agregarusuario' element={<AgregarUsurio/>}exact > </Route>
-      <Route path='/editarusuario' element={<EditarUsurio/>}exact> </Route>
+      <Route path='/agregarusuario' element={<AgregarUsuario/>}exact > </Route>
+      <Route path='/editarusuario' element={<EditarUsuario/>}exact> </Route>
       </Routes>
     </BrowserRouter>
     </div>  
